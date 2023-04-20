@@ -1,3 +1,10 @@
+#Task 1
+import statistics
+
+numbers = [1, 2, 3, 4, 5]
+mean = statistics.mean(numbers)
+print(mean)
+
 #Task 2
 def count_vowels_and_consonants(string):
     vowels = 0
