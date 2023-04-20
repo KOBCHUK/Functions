@@ -1,6 +1,5 @@
 #Task 1
 import statistics
-
 numbers = [1, 2, 3, 4, 5]
 mean = statistics.mean(numbers)
 print(mean)
@@ -42,8 +41,8 @@ print(f"The {n}th element of the Fibonacci sequence is: {fib_n}")
 #Task 5
 def capitalize_first_letter_of_each_word(string):
     return ' '.join(word.capitalize() for word in string.split())
-    
-# Task 6
+ 
+ # Task 6
 def scalar_product(list1, list2):
     if len(list1) != len(list2):
         raise ValueError("The two lists must have the same length.")
@@ -53,6 +52,14 @@ list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 result = scalar_product(list1, list2)
 print(result)
+
+#Task 7
+def get_divisors(num):
+    divisors = []
+    for i in range(1, num+1):
+        if num % i == 0:
+            divisors.append(i)
+    return divisors
 
 #Task 8
 def sort_by_age(list_of_tuples):
