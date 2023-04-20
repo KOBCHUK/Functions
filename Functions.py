@@ -17,7 +17,15 @@ def count_vowels_and_consonants(string):
     print(f"There are {vowels} vowels and {consonants} consonants in the string.")
     return vowels, 
 
-#Task 4
+#Task 3
+def unique_list(lst):
+    unique_lst = [lst[0]]
+    for i in lst:
+        if i not in unique_lst:
+            unique_lst.append(i)
+    return unique_lst
+    
+#Task 4    
 def fibonacci(n):
     if n <= 0:
         return None
