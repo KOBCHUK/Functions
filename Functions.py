@@ -39,6 +39,10 @@ n = 10
 fib_n = fibonacci(n)
 print(f"The {n}th element of the Fibonacci sequence is: {fib_n}")
 
+#Task 5
+def capitalize_first_letter_of_each_word(string):
+    return ' '.join(word.capitalize() for word in string.split())
+    
 # Task 6
 def scalar_product(list1, list2):
     if len(list1) != len(list2):
@@ -47,7 +51,6 @@ def scalar_product(list1, list2):
     return sum([list1[i] * list2[i] for i in range(len(list1))])
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
-
 result = scalar_product(list1, list2)
 print(result)
 
